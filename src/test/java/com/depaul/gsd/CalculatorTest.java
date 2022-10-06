@@ -1,9 +1,6 @@
 package com.depaul.gsd;
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.RepeatedTest;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -34,7 +31,7 @@ class CalculatorTest {
     void testMultiplyWithZero() {
 
 //        Skip the test if executed on Windows.
-//        Assumptions.assumeFalse(System.getProperty("os.name").contains("Linux"));
+        Assumptions.assumeFalse(System.getProperty("os.name").contains("Linux"));
 
         assertEquals(0, calculator.multiply(0, 5), "Multiple with zero should be zero");
         assertEquals(0, calculator.multiply(5, 0), "Multiple with zero should be zero");
