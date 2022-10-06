@@ -31,7 +31,7 @@ class CalculatorTest {
     void testMultiplyWithZero() {
 
 //        Skip the test if executed on Windows.
-        Assumptions.assumeFalse(System.getProperty("os.name").contains("Linux"));
+//        Assumptions.assumeFalse(System.getProperty("os.name").contains("Linux"));
 
         assertEquals(0, calculator.multiply(0, 5), "Multiple with zero should be zero");
         assertEquals(0, calculator.multiply(5, 0), "Multiple with zero should be zero");
