@@ -29,7 +29,7 @@ class CalculatorTestKatieRuane {
     @DisplayName("Adding 7 from initial value")
 //    @Disabled("The method changed - Fix later")  //marks a test to be disabled.
     void addSeven() {
-        calculatorClassActivityActivity.add(7);
+        calculatorClassActivity.add(7);
 //      This is an assert statement which validates that expected and actual value is the same, if not the message at the end of the method is shown
         assertEquals(7, calculatorClassActivity.getValue(), "Regular addition should work");
 
